@@ -126,3 +126,115 @@ console.log(reportingForDuty('Private', 'Fido')) // comprobar que Tarea 6 funcio
 // Tarea 7
 separadorTarea(); // separador de tarea en consola
 
+const rollTheDice = () => {
+    // Math.random() nos da un numero random desde 0 pero no incluye el 1
+    // Multiplicamos ese numero por 6 para tener un numero entre 0 y 6 pero no logramos incluir el 6
+    // para lograrlo hemos intentado lo siguiente sumamos 1
+    let die1 = Math.floor(Math.random() * 6) + 1
+    let die2 = Math.floor(Math.random() * 6) + 1
+    return die1 + die2
+    }
+
+console.log(rollTheDice()) // comprobar que Tarea 7 funciona (debería devolver un numero entre 2 y 12)
+console.log(rollTheDice()) // comprobar que Tarea 7 funciona (debería devolver un numero entre 2 y 12)
+console.log(rollTheDice()) // comprobar que Tarea 7 funciona (debería devolver un numero entre 2 y 12)
+
+
+
+// Tarea 8
+separadorTarea(); // separador de tarea en consola
+
+const calculateWeight = (earthWeight, planet) => {
+    switch (planet) {
+        case 'Mercury':
+            return earthWeight * 0.378;
+        case 'Venus':
+            return earthWeight * 0.907;
+        case 'Mars':
+            return earthWeight * 0.377;
+        case 'Jupiter':
+            return earthWeight * 2.36;
+        case 'Saturn':
+            return earthWeight * 0.916;
+        default:
+            return 'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.';
+    }
+}
+
+console.log(calculateWeight(100, 'Jupiter')) // comprobar que Tarea 8 funciona (debería devolver 236)
+console.log(calculateWeight(100, 'Saturn')) // comprobar que Tarea 8 funciona (debería devolver 91.6)
+console.log(calculateWeight(100, 'Earth')) // comprobar que Tarea 8 funciona (debería devolver 'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.')
+
+
+// Tarea 9
+separadorTarea(); // separador de tarea en consola
+
+const truthyOrFalsy = (value) => {
+    if (value) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(truthyOrFalsy(0)) // comprobar que Tarea 9 funciona (debería devolver false)
+console.log(truthyOrFalsy(1)) // comprobar que Tarea 9 funciona (debería devolver true)
+console.log(truthyOrFalsy('')) // comprobar que Tarea 9 funciona (debería devolver false)
+console.log(truthyOrFalsy('string')) // comprobar que Tarea 9 funciona (debería devolver true)
+console.log(truthyOrFalsy(null)) // comprobar que Tarea 9 funciona (debería devolver false)
+console.log(truthyOrFalsy(!null)) // comprobar que Tarea 9 funciona (debería devolver true porque se esta negando el valor de null)
+console.log(truthyOrFalsy(undefined)) // comprobar que Tarea 9 funciona (debería devolver false)
+console.log(truthyOrFalsy(!undefined)) // comprobar que Tarea 9 funciona (debería devolver true porque se esta negando el valor de undefined)
+console.log(truthyOrFalsy(NaN)) // comprobar que Tarea 9 funciona (debería devolver false)
+console.log(truthyOrFalsy(!NaN)) // comprobar que Tarea 9 funciona (debería devolver true porque se esta negando el valor de NaN)
+
+
+// Tarea 10
+separadorTarea(); // separador de tarea en consola
+
+
+const numImaginaryFriends = (friends) => {
+    return Math.ceil(friends * 0.25)
+}
+
+console.log(numImaginaryFriends(20)) // comprobar que Tarea 10 funciona (debería devolver 5)   
+console.log(numImaginaryFriends(10)) // comprobar que Tarea 10 funciona (debería devolver 3)
+
+
+// Tarea 11
+separadorTarea(); // separador de tarea en consola
+
+const sillySentence = (adjective, verb, noun) => {
+    return `I am so ${adjective} because I ${verb} coding! Time to write some more awesome ${noun}!`;
+}
+
+console.log(sillySentence('excited', 'love', 'functions')); // comprobar que Tarea 11 funciona (debería devolver '
+
+
+// Tarea 12
+separadorTarea(); // separador de tarea en consola
+
+const howOld = (age, year) => {
+    let dateToday = new Date();
+    let thisYear = dateToday.getFullYear();
+    const yearDifference = year - thisYear;
+    const newAge = age + yearDifference;
+
+    if (newAge < 0) {
+        return `The year ${year} was ${-newAge} years before you were born`;
+    } else if (newAge > age) {
+        return `You will be ${newAge} in the year ${year}`;
+    } else {
+        return `You were ${newAge} in the year ${year}`;
+    }
+}
+
+console.log(howOld(30, 2021)) // comprobar que Tarea 12 funciona (debería devolver 'You were 26 in the year 2021')
+console.log(howOld(30, 1991)) // comprobar que Tarea 12 funciona (debería devolver 'The year 1991 was 4 years before you were born')
+console.log(howOld(30, 2051)) // comprobar que Tarea 12 funciona (debería devolver 'You will be 56 in the year 2051')
+
+
+
+// Tarea 13
+separadorTarea(); // separador de tarea en consola
+

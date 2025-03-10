@@ -74,7 +74,10 @@ return die1 + die2
 }
 
 ### TAREA 8
-Aunque la masa de un objeto permanece constante en todo el universo, el peso esta determinado por la fuerza de gravedad que ejerce sobre el. Como cada planeta tiene una gravedad diferente, el mismo objeto pesaria cantidades distintas en cada uno de esos planetas.
+Aunque la masa de un objeto permanece constante en todo el universo, 
+el peso esta determinado por la fuerza de gravedad que ejerce sobre el. 
+Como cada planeta tiene una gravedad diferente, el mismo objeto pesaria 
+cantidades distintas en cada uno de esos planetas.
 
 Escribe una funcion, calculateWeight(). Deberia:
 
@@ -92,44 +95,59 @@ Manejar los siguientes casos:
 'Mars' peso = earthWeight * 0.377
 'Jupiter' peso = earthWeight * 2.36
 'Saturn' peso = earthWeight * 0.916
-Para todas las demas entradas, devuelva 'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.'
+Para todas las demas entradas, devuelva 'Invalid Planet Entry. 
+Try: Mercury, Venus, Mars, Jupiter, or Saturn.'
 
 Pruebalo con:
 console.log(calculateWeight(100, 'Jupiter')) // Deberia imprimir 236
 
 ### TAREA 9
-Puede resultar dificil hacer un seguimiento de lo que es verdadero o falso en JavaScript. Escriba una funcion, truthyOrFalsy(), que acepte cualquier valor y devuelva true si ese valor es verdadero y false si ese valor es falso.
+Puede resultar dificil hacer un seguimiento de lo que es verdadero o falso en 
+JavaScript. Escriba una funcion, truthyOrFalsy(), que acepte cualquier valor y 
+devuelva true si ese valor es verdadero y false si ese valor es falso.
 https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 
 ### TAREA 10
-Las personas tienen muchos amigos, pero a veces creen tener mas, se ha realizado un estudio y se ha determinado que la cantidad de amigos imaginarios de una persona es igual a la cantidad de amigos por 0.25 es decir un 25% de sus amigos o 1/4 de ellos.
+Las personas tienen muchos amigos, pero a veces creen tener mas, se ha realizado 
+un estudio y se ha determinado que la cantidad de amigos imaginarios de una persona 
+es igual a la cantidad de amigos por 0.25 es decir un 25% de sus amigos o 1/4 de ellos.
 
-Escribe una funcion, numImaginatyFriends() que tome el numero de amigos de una persona y devuelva el numero de amigos imaginarios que tiene esa persona. Debido a que los amigos solo pueden venir en numeros enteros, deberias redondear el resultado al entero mas cercano antes de retornarlo. La funcion Math.ceil() te resultara util.
+Escribe una funcion, numImaginatyFriends() que tome el numero de amigos de una 
+persona y devuelva el numero de amigos imaginarios que tiene esa persona. Debido a 
+que los amigos solo pueden venir en numeros enteros, deberias redondear el resultado 
+al entero mas cercano antes de retornarlo. La funcion Math.ceil() te resultara util.
 
 Utiliza las siguientes lineas de codigo para realizar la prueba:
 console.log(numImaginaryFriends(20)) // Debe imprimir 5
 console.log(numImaginaryFriends(10)) // debe imprimir 3
 
 ### TAREA 11
-Escribe una funcion, sillySentence(), que contenga 3 parametros de cadena y devuelva la siguiente oracion tonta con los espacios en blanco completados por los argumentos pasados a la funcion.
+Escribe una funcion, sillySentence(), que contenga 3 parametros de cadena y 
+devuelva la siguiente oracion tonta con los espacios en blanco completados por 
+los argumentos pasados a la funcion.
 
 I am so (adjetive) because I (verb) coding! Time to write some more awesome (noun)!
 
-La llamada a sillySentence('excited', 'love', 'functions') deberia retornar 'I am so excited because I love coding! Time to write some more awesome functions!'
+La llamada a sillySentence('excited', 'love', 'functions') deberia retornar 
+'I am so excited because I love coding! Time to write some more awesome functions!'
 
 Utiliza la siguiente linea de codigo para realizar la prueba:
 console.log(sillySentence('excited', 'love', 'functions'))
 
 ### TAREA 12
-Escribe una funcion, howOld(), que tome dos parametros numericos, age y year, y devuelva cuantos años tendria una persona con esa edad en ese año.
+Escribe una funcion, howOld(), que tome dos parametros numericos, age y year, 
+y devuelva cuantos años tendria una persona con esa edad en ese año.
 
 Debe tratar tres casos diferentes:
 
-Si el year esta en el futuro, debe devolver: 'Tu tendras [age calculada] en el año [year].'
+Si el year esta en el futuro, debe devolver: 'Tu tendras [age calculada] en el 
+año [year].'
 
-Si el year es anterior al nacimiento, debe devolver una cadena con el siguiente formato: 'El año [year] fue [numero de años calculados] años antes de nacer.'
+Si el year es anterior al nacimiento, debe devolver una cadena con el siguiente 
+formato: 'El año [year] fue [numero de años calculados] años antes de nacer.'
 
-Si el year es en el pasado pero no anterior al año de nacimiento de la persona, debe devolver: 'Tu tenias [age calculada] en el año [year del pasado].'
+Si el year es en el pasado pero no anterior al año de nacimiento de la persona, 
+debe devolver: 'Tu tenias [age calculada] en el año [year del pasado].'
 
 Utiliza en tu funcion:
 let dateToday = new Date();
